@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130903212839) do
+ActiveRecord::Schema.define(version: 20130903232010) do
 
-  create_table "Leys", force: true do |t|
+  create_table "leys", force: true do |t|
     t.integer  "numero"
     t.datetime "fecha"
-    t.string   "titulo"
-    t.text     "texto",       limit: 255
+    t.text     "titulo"
+    t.text     "texto"
     t.integer  "legislatura"
     t.datetime "created_at"
     t.datetime "updated_at"
