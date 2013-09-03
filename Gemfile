@@ -26,9 +26,12 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # twitter bootstrap
-gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails"
+gem 'therubyracer', :platforms => :ruby
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+
+gem 'formtastic'
+gem 'formtastic-bootstrap'
 
 # d3.js included
 gem "d3-rails"

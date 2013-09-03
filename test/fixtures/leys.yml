@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  numero: 1
+  fecha: 2013-09-03
+  titulo: MyString
+  texto: MyString
+  legislatura: 1
+
+two:
+  numero: 1
+  fecha: 2013-09-03
+  titulo: MyString
+  texto: MyString
+  legislatura: 1
