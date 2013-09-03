@@ -36,6 +36,9 @@ gem 'formtastic-bootstrap'
 # d3.js included
 gem "d3-rails"
 
+# for static pages
+gem 'high_voltage'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
