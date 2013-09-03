@@ -17,7 +17,7 @@
     <% @leys.each do |ley| %>
       <tr>
         <td><%= link_to ley.numero, ley_path(ley) %></td>
-        <td><%= ley.fecha %></td>
+        <td><%= ley.fecha.to_date %></td>
         <td><%= ley.titulo %></td>
         <td><%= ley.texto %></td>
         <td><%= ley.legislatura %></td>

@@ -8,6 +8,7 @@
   <div class="control-group">
     <%= f.label :fecha, :class => 'control-label' %>
     <div class="controls">
+      <%= f.datetime_field :fecha, :class => 'datetime_field' %>
     </div>
   </div>
   <div class="control-group">
@@ -19,7 +20,7 @@
   <div class="control-group">
     <%= f.label :texto, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :texto, :class => 'text_field' %>
+      <%= f.text_area :texto, :class => 'text_area' %>
     </div>
   </div>
   <div class="control-group">
