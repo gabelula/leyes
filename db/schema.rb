@@ -11,16 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130903232010) do
+ActiveRecord::Schema.define(version: 20130904201653) do
 
   create_table "leys", force: true do |t|
     t.integer  "numero"
     t.datetime "fecha"
     t.text     "titulo"
-    t.text     "texto"
     t.integer  "legislatura"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "texto"
   end
 
 end
