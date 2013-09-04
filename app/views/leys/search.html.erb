@@ -1,0 +1,13 @@
+<% if @leys.results.size > 0 %>
+  <h2> Resultados de busqueda por "<%= params[:query] %>" </h2>
+
+  <div class="results">
+    <% @leys.each_hit_with_result do |hit, ley| %>
+      <h3><%= ley.titulo %></h3>
+      <strong><%= hit.score %></strong>
+      <p><%= truncate(ley.texto, :length => 100) %></p>
+    <% end %>
+  </div>
+<% else %>
+  <p>No se obtuvieron resultados.</p>
+<% end %>

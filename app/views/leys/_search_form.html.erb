@@ -1,0 +1,4 @@
+<%= form_for :search, :url => search_leys_url, :html => { :method => :get, :class => 'navbar-form pull-right' } do %>
+  <%= text_field_tag :query %>
+  <%= submit_tag "buscar" %>
+<% end %>

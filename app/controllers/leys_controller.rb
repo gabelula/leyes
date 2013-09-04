@@ -10,6 +10,7 @@ class LeysController < ApplicationController
   # GET /leys/1
   # GET /leys/1.json
   def show
+    @ley = Ley.find(params[:id])
   end
 
   # GET /leys/new
@@ -58,6 +59,12 @@ class LeysController < ApplicationController
     respond_to do |format|
       format.html { redirect_to leys_url }
       format.json { head :no_content }
+    end
+  end
+
+  def search
+    @leys = Ley.search do
+      keywords(params[:query])
     end
   end
 

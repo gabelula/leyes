@@ -39,6 +39,10 @@ gem "d3-rails"
 # for static pages
 gem 'high_voltage'
 
+# for the search engine
+gem 'sunspot_rails'
+gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -54,7 +58,7 @@ end
 # gem 'capistrano', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
 
 group :development do
     # Use sqlite3 as the database for Active Record only on development
